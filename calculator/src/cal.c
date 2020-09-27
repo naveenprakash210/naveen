@@ -3,12 +3,12 @@
 
 //function declarations
 void display(float n1, float n2, char ch, float result);
-void add(float n1, float n2);
-void subtract(float n1, float n2);
-void multiply(float n1, float n2);
-void divide(float n1, float n2);
-void rem(float n1, float n2);
-void power(float n1, float n2);
+float add(float n1, float n2);
+float subtract(float n1, float n2);
+float multiply(float n1, float n2);
+float divide(float n1, float n2);
+float rem(float n1, float n2);
+float power(float n1, float n2);
 
 //main function
 int main()
@@ -71,35 +71,39 @@ void display(float n1, float n2, char ch, float result)
 }
 
 //function for addition of two numbers
-void add(float n1, float n2)
+float add(float n1, float n2)
 {
   float result = n1 + n2;
   display(n1, n2, '+', result);
+  return result;
 }
 
 //function for subtraction of two numbers
-void subtract(float n1, float n2)
+float subtract(float n1, float n2)
 {
   float result = n1 - n2;
   display(n1, n2, '-', result);
+  result result;
 }
 
 //function for multiplication of two numbers
-void multiply(float n1, float n2)
+float multiply(float n1, float n2)
 {
   float result = n1 * n2;
   display(n1, n2, '*', result);
+  return result;
 }
 
 //function for division of two numbers
-void divide(float n1, float n2)
+float divide(float n1, float n2)
 {
   float result = n1 / n2;
   display(n1, n2, '/', result);
+  return result;
 }
 
 //function for calculating remainder
-void rem(float n1, float n2)
+float rem(float n1, float n2)
 {
   //Modulus operator only works on int data type
   //Floating numbers are converted to int number
@@ -107,10 +111,11 @@ void rem(float n1, float n2)
   int num2 = n2;
   int result = num1%num2;
   printf("%d %% %d = %d\n", num1, num2, result);
+  return result;
 }
 
 //function for calculating power
-void power(float n1, float n2)
+float power(float n1, float n2)
 {
   if(n2<0) printf("Second number should be +ve.");
   else
@@ -122,5 +127,6 @@ void power(float n1, float n2)
     }
     display(n1, n2, '^', result);
   }
+  return result;
 }
 
