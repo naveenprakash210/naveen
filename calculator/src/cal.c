@@ -1,4 +1,4 @@
-#include<stdio.h>
+/*#include<stdio.h>
 #include<stdlib.h>
 
 //function declarations
@@ -9,7 +9,7 @@ float multiply(float n1, float n2);
 float divide(float n1, float n2);
 float rem(float n1, float n2);
 float power(float n1, float n2);
-
+*/
 //main function
 int main()
 {
