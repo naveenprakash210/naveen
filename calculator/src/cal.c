@@ -84,7 +84,7 @@ float subtract(float n1, float n2)
 {
   float result = n1 - n2;
   display(n1, n2, '-', result);
-  result result;
+  return result;
 }
 
 //function for multiplication of two numbers
