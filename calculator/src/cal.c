@@ -128,6 +128,6 @@ float power(float n1, float n2)
     }
     display(n1, n2, '^', result);
   }
-  return result;
+  return 0;
 }
 
